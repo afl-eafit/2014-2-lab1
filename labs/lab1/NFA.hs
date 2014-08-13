@@ -4,9 +4,9 @@ import Data.Set ( Set )
 
 -- | A non-deterministic finite automaton.
 data NFA state symbol =
-  MkNFA { statesNFA  :: Set state                    --  States
-        , symbolsNFA :: Set symbol                   --  Input symbols
-        , deltaNFA   :: state -> symbol -> Set state --  Transition function
-        , startNFA   :: state                        --  Start state
-        , finalsNFA  :: Set state                    --  Final state
+  MkNFA { states  :: Set state                    --  States
+        , symbols :: Set symbol                   --  Input symbols
+        , delta   :: state -> symbol -> Set state --  Transition function
+        , start   :: state                        --  Start state
+        , finals  :: Set state                    --  Final states
         }
