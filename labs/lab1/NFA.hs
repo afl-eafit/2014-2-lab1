@@ -1,4 +1,4 @@
-module NFA  where
+module NFA where
 
 import Data.Set ( Set )
 
