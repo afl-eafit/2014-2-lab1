@@ -1,0 +1,84 @@
+﻿<html>
+<head>
+   <title>Simulating a Non-deterministic finite automaton</title>
+</head>
+
+<body>
+   <div align="center">
+      <h1>Programming Lab 1: Simulating a non-deterministic finite automaton</h1>
+      <p><b>Submission deadline:</b></p>
+   </div>
+
+   <h3>Introduction</h3>
+
+   <div align = "left">
+      The aim of this programming assigment is to write a Haskell program
+      that given a non-deterministic finite automaton NFA and a word w,
+      determines if w &isin; L(NFA).
+   </div>
+
+   <h3>Assignment (_%)</h3>
+
+   <ul>
+      <li>Download from the GitHub repository
+      <a href="https://github.com/dmonto3/PL1">dmonto3/PL1</a>
+     the modules NFA and Example, where you will find an implementation 
+     and an example of a non-deterministic finite automaton.</li>
+
+     <li>Using the module NFA, define a function
+        <pre> simulatingNFA :: NFA states symbols -&gt; [symbols] -&gt; Bool</pre>
+        that test if a word w = [symbols] ∈ L(NFA).
+     </li>
+   </ul>
+
+   <h3>Clean code (_%)</h3>
+
+   Before submiting your code, clean it up! Clean code:
+   
+   <ul>
+      <li>Does not have long lines (at most 80 columns).</li>
+      <li>Has a consistent layout.</li>
+      <li>Has type signatures for everything (even where clauses
+      and let expressions).</li>
+      <li>Has good comments.</li>
+      <li>Has no junk (unused code, commented code, unnecessary code).</li>
+      <li>Has no overly complicated function definitions.</li>
+      <li>Does not contain any repetitive code.</li>
+   </ul>
+
+   <h3>Submission</h3>
+
+   Submission is electronic. Send an email to asicard(at)eafit(dot)edu(dot)co and
+   dmonto39(at)eafit(dot)edu(dot)co and attach a compressed file
+   with your solution.
+   Your submission has to include the following:
+   <ul>
+      <li><code>SimulationNFA.hs</code>, a Haskell module file with your 
+      solution for the assigment.</li>
+      <li>README, a file containing at least the following information.
+         <ul>
+            <li>The name of your program.</li>
+            <li>Your name(s).</li>
+            <li>A general description of your program.</li>
+            <li>Information on how to use your program.</li>
+         </ul>
+      </li>
+   </ul>
+
+   <h3>Notes</h3>
+
+   <ul>
+      <li>The programming lab may either be solved on your own, or jointly with one
+      other student taking the course.</li>
+      <li>You are to use the Haskell Platform 2014.2.0.0 or GHC &ge; 7.8.3.</li>
+      <li>You can add class constraints to the type signature of simulatingNFA if you
+      need them.</li>
+   </ul>
+
+   <h3>Bibliography</h3>
+
+   Hopcroft, John E.; Motwani, Rajeev; Ullman, Jeffrey D. (2006). <i>Introduction to
+   Automata Theory , Languages, and Computation</i> (3rd ed.). Addison-Wesley.
+
+</body>
+</html>
