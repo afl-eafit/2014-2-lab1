@@ -15,31 +15,37 @@
     <h1>Programming lab 1: Simulating a non-deterministic finite
     automaton</h1>
 
-    <p><b>Submission deadline:</b></p>
+    <p><b>Submission deadline: Friday, September 5, 2014 (11:59 p.m.)</b></p>
   </div>
 
-  <h3>Introduction</h3>
+  <h2>Introduction</h2>
 
   <p>The aim of this programming assigment is to write a Haskell program that
-  given a non-deterministic finite automaton NFA and a word w, determines if
-  w ∈ L(NFA).</p>
+  given a non-deterministic finite automaton <i>nfa</i> and a word <i>w</i>,
+  determines if <i>w</i> ∈ L(<i>nfa</i>).</p>
 
-  <h3>Assignment (_%)</h3>
+  <h2>Assignment (80%)</h2>
 
   <ul>
     <li>Download from the GitHub repository <a href=
     "https://github.com/afl-eafit/cb0081-2014-2-lab1">cb0081-2014-2-lab1</a>
-    the modules NFA and Example, where you will find an implementation and an
-    example of a non-deterministic finite automaton.</li>
+    the modules NFA.hs and Example.hs, where you will find an implementation
+    and an example of a non-deterministic finite automaton,
+    respectively.</li>
 
-    <li>Using the module NFA, define a function
+    <li>(70%) Using the module NFA, define a function
       <pre>
- simulatingNFA :: NFA states symbols -&gt; [symbols] -&gt; Bool
-</pre>that test if a word w = [symbols] ∈ L(NFA).
+  simulatingNFA :: NFA states symbols -&gt; [symbols] -&gt; Bool
+</pre>where <code>simulatingNFA nfa w</code> determines if <code>w</code> ∈
+L(<code>nfa</code>).
     </li>
+
+    <li>(10%) Annotate your source code in a way that explains your solution
+    for the assignment. Improve it with <a href=
+    "http://community.haskell.org/~ndm/hlint/">HLint</a>.</li>
   </ul>
 
-  <h3>Clean code (_%)</h3>
+  <h2>Clean code (10%)</h2>
 
   <p>Before submiting your code, clean it up! Clean code:</p>
 
@@ -60,7 +66,7 @@
     <li>Does not contain any repetitive code.</li>
   </ul>
 
-  <h3>Submission</h3>
+  <h2>Submission (10%)</h2>
 
   <p>Submission is electronic. Send an email to asr(at)eafit(dot)edu(dot)co
   and dmonto39(at)eafit(dot)edu(dot)co and attach a compressed file with your
@@ -84,21 +90,26 @@
     </li>
   </ul>
 
-  <h3>Notes</h3>
+  <h2>Required GHC version</h2>
+
+  <p>You are to use GHC 7.8.3. You can get it installing the <a href=
+  "http://www.haskell.org/platform/">Haskell Platform 2014.2.0.0</a>
+  (recommended) or you can install it from <a href=
+  "http://www.haskell.org/ghc/">the Glasgow Haskell Compiler</a>.</p>
+
+  <h2>Additional information</h2>
 
   <ul>
     <li>The programming lab may either be solved on your own, or jointly with
     one other student taking the course.</li>
 
-    <li>You are to use the Haskell Platform 2014.2.0.0 or GHC ≥ 7.8.3.</li>
-
-    <li>You can add class constraints to the type signature of simulatingNFA
-    if you need them.</li>
+    <li>You can add class constraints to the type signature of the
+    <code>simulatingNFA</code> function if you need them.</li>
   </ul>
 
-  <h3>Bibliography</h3>
+  <h2>Bibliography</h2>
 
-  <p>Hopcroft, John E.; Motwani, Rajeev; Ullman, Jeffrey D. (2007).
+  <p>John E. Hopcroft, Rajeev Motwani, and Jeffrey D. Ullman (2007).
   Introduction to Automata Theory, Languages, and Computation. 3rd ed.
   Addison-Wesley.</p>
   <hr>
