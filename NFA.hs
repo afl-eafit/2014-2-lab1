@@ -1,5 +1,5 @@
 -- | Taken from:
--- | https://github.com/agomezl/Empty/blob/master/src/EAFIT/CB0081/Data/NFA.hs
+-- | https://github.com/afl-eafit/cb0081-2013-2-lab1/blob/master/src/EAFIT/CB0081/Data/NFA.hs
 
 module NFA where
 
