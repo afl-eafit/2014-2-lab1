@@ -1,57 +1,59 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
-<html>
-<head>
-  <meta name="generator" content=
-  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-  <title>Simulating a Non-deterministic finite automaton</title>
-</head>
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+    <title>Simulating a Non-deterministic finite automaton</title>
+  </head>
 
-<body>
-  <div style="text-align: center;">
-    <h1>Programming lab 1: Simulating a non-deterministic finite
-    automaton</h1>
+  <body>
+    <div style="text-align: center;">
+      <h1>Programming lab 1: Simulating a non-deterministic finite
+      automaton</h1>
 
-    <p><b>Submission deadline: Friday, September 5, 2014 (11:59 pm)</b></p>
-  </div>
+      <p><b>Submission deadline: Friday, September 5, 2014 (11:59 pm)</b></p>
+    </div>
 
-  <h2>Introduction</h2>
+    <hr/>
 
-  <p>The aim of this programming assigment is to write a Haskell program that
-  given a non-deterministic finite automaton <i>nfa</i> and a word <i>w</i>,
-  determines if <i>w</i> ∈ L(<i>nfa</i>).</p>
+    <h2>Introduction</h2>
 
-  <h2>Assignment (80%)</h2>
+    <p>The aim of this programming assigment is to write a Haskell
+    program that given a non-deterministic finite automaton <i>nfa</i>
+    and a word <i>w</i>, determines if <i>w</i> ∈ L(<i>nfa</i>).</p>
 
-  <ul>
+    <h2>Assignment (80%)</h2>
+
+    <ul>
     <li>Download from the GitHub repository <a href=
     "https://github.com/afl-eafit/cb0081-2014-2-lab1">cb0081-2014-2-lab1</a>
-    the modules NFA.hs and Example.hs, where you will find an implementation
-    and an example of a non-deterministic finite automaton,
-    respectively.</li>
+    the modules NFA.hs and Example.hs, where you will find an
+    implementation and an example of a non-deterministic finite
+    automaton, respectively.</li>
 
     <li>(70%) Using the module NFA, define a function
-      <pre>
-  simulatingNFA :: NFA states symbols -&gt; [symbols] -&gt; Bool
-</pre>where <code>simulatingNFA nfa w</code> determines if <code>w</code> ∈
-L(<code>nfa</code>).
+    <pre>
+      simulatingNFA :: NFA states symbols -&gt; [symbols] -&gt; Bool
+    </pre>
+    where <code>simulatingNFA nfa w</code> determines if <code>w</code> ∈
+    L(<code>nfa</code>).
     </li>
 
-    <li>(10%) Annotate your source code in a way that explains your solution
-    for the assignment. Improve it with <a href=
+    <li>(10%) Annotate your source code in a way that explains your
+    solution for the assignment. Improve it with <a href=
     "http://community.haskell.org/~ndm/hlint/">HLint</a>.</li>
-  </ul>
+    </ul>
 
-  <h2>Coding style (10%)</h2>
+    <h2>Coding style (10%)</h2>
 
-  <p>Before submitting your programming lab verify that your code:</p>
+    <p>Before submitting your programming lab verify that your
+    code:</p>
 
-  <ul>
-    <li>Has type signatures for everything (even <code>where</code> clauses
-    and <code>let</code> expressions).</li>
+    <ul>
+    <li>Has type signatures for everything (even <code>where</code>
+    clauses and <code>let</code> expressions).</li>
 
     <li>Has good (English) comments.</li>
 
@@ -65,23 +67,25 @@ L(<code>nfa</code>).
 
     <li>Has no junk (unused code, commented code, unnecessary code).</li>
 
-    <li>Does not have trailing whitespace (delete all unnecessary spaces at
-    the end of a line, or empty lines at the end of a file). See <a href=
+    <li>Does not have trailing whitespace (delete all unnecessary
+    spaces at the end of a line, or empty lines at the end of a
+    file). See <a href=
     "http://www1.eafit.edu.co/asicard/tips-and-tricks.html#fixing-trailing-whitespace-issues">
     fixing trailing whitespace issues with Emacs</a>.</li>
-  </ul>
+    </ul>
 
-  <h2>Submission (10%)</h2>
+    <h2>Submission (10%)</h2>
 
-  <p>Submission is electronic. Send an email to asr(at)eafit(dot)edu(dot)co
-  and dmonto39(at)eafit(dot)edu(dot)co and attach a compressed file with your
-  solution. Your submission has to include the following:</p>
+    <p>Submission is electronic. Send an email to
+    asr(at)eafit(dot)edu(dot)co and dmonto39(at)eafit(dot)edu(dot)co
+    and attach a compressed file with your solution. Your submission
+    has to include the following:</p>
 
-  <ul>
-    <li><code>SimulationNFA.hs</code>, a Haskell module file with your
-    solution for the assigment.</li>
+    <ul>
+      <li><code>SimulationNFA.hs</code>, a Haskell module file with
+      your solution for the assigment.</li>
 
-    <li>README.txt, a file containing at least the following information.
+      <li>README.txt, a file containing at least the following information.
 
       <ul>
         <li>The name of your program.</li>
@@ -92,39 +96,46 @@ L(<code>nfa</code>).
 
         <li>Information on how to use your program.</li>
       </ul>
-    </li>
-  </ul>
+      </li>
+    </ul>
 
-  <h2>Required GHC version</h2>
+    <h2>Required GHC version</h2>
 
-  <p>You are to use GHC 7.8.3. You can get it installing the <a href=
-  "http://www.haskell.org/platform/">Haskell Platform 2014.2.0.0</a>
-  (recommended) or you can install it from <a href=
-  "http://www.haskell.org/ghc/">the Glasgow Haskell Compiler</a>.</p>
+    <p>You are to use GHC 7.8.3. You can get it installing the <a
+    href= "http://www.haskell.org/platform/">Haskell Platform
+    2014.2.0.0</a> (recommended) or you can install it from <a href=
+    "http://www.haskell.org/ghc/">the Glasgow Haskell
+    Compiler</a>.</p>
 
-  <h2>Additional information</h2>
+    <h2>Additional information</h2>
 
-  <ul>
-    <li>The programming lab may either be solved on your own, or jointly with
-    one other student taking the course.</li>
+    <ul>
+      <li>The programming lab may either be solved on your own, or
+      jointly with one other student taking the course.</li>
 
-    <li>You can add class constraints to the type signature of the
-    <code>simulatingNFA</code> function if you need them.</li>
-  </ul>
+      <li>You can add class constraints to the type signature of the
+      <code>simulatingNFA</code> function if you need them.</li>
+    </ul>
 
-  <h2>Bibliography</h2>
+    <h2>Bibliography</h2>
 
-  <p>John E. Hopcroft, Rajeev Motwani, and Jeffrey D. Ullman (2007).
-  Introduction to Automata Theory, Languages, and Computation. 3rd ed.
-  Addison-Wesley.</p>
-  <hr>
+    <p>John E. Hopcroft, Rajeev Motwani, and Jeffrey D. Ullman (2007).
+    Introduction to Automata Theory, Languages, and Computation. 3rd
+    ed.  Addison-Wesley.</p>
 
-  <p><a href=
-  "http://www1.eafit.edu.co/asicard/courses/automata-CB0081/">Automata and
-  formal languages - CB0081</a></p>
 
-  <p><a href="http://validator.w3.org/check?uri=referer"><img src=
-  "http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Strict"
-  height="31" width="88"></a></p>
-</body>
+    <hr/>
+
+    <table>
+      <tr>
+        <td><a href=
+        "http://www1.eafit.edu.co/asicard/courses/automata-CB0081/">Automata
+        and formal languages - CB0081</a></td>
+
+        <td>  <a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML
+        1.1" height="31" width="88" /></a></td>
+      </tr>
+    </table>
+  </body>
 </html>
